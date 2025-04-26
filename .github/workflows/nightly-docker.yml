@@ -26,4 +26,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           push: true
-          tags: ghcr.io/ushion0a/ZeroBot-Plugin:bzd
+          tags: ghcr.io/${{ github.repository }}
