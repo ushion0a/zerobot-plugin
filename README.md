@@ -402,6 +402,18 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
+  <summary>AnimeTrace 动画/Galgame识别</summary>
+
+  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/animetrace"`
+
+  基于[AnimeTrace](https://ai.animedb.cn/)API  的识图搜索插件
+  
+  - [x] Gal识图 | Gal识图 [模型名]
+
+  - [x] 动漫识图 | 动漫识图 2 | 动漫识图 [模型名]
+
+</details>
+<details>
   <summary>触发者撤回时也自动撤回</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/autowithdraw"`
@@ -951,6 +963,28 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
+  <summary>Minecraft服务器监控&订阅</summary>
+
+`import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/minecraftobserver"`
+
+- [x] mc服务器状态 [服务器IP/URI]
+- [x] mc服务器添加订阅 [服务器IP/URI]
+- [x] mc服务器取消订阅 [服务器IP/URI]
+- [x] mc服务器订阅拉取 （需要插件定时任务配合使用，全局只需要设置一个）
+  - 使用job插件设置定时, 对话例子如下:：
+    - 记录在"@every 1m"触发的指令
+    - （机器人回答：您的下一条指令将被记录，在@@every 1m时触发）
+    - mc服务器订阅拉取
+</details>
+<details>
+  <summary>Movies猫眼电影查询</summary>
+
+`import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/movies"`
+
+- [x] 今日电影
+- [x] 预售电影
+</details>
+<details>
   <summary>摸鱼</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/moyu"`
@@ -1044,6 +1078,10 @@ print("run[CQ:image,file="+j["img"]+"]")
 - [x] 使用[道具名称]jj[@xxx]
 
 - [x] 赎牛牛
+
+- [x] 牛牛拍卖行
+
+- [x] 出售牛牛
 
 - [x] 牛牛商店
 
@@ -1534,6 +1572,25 @@ print("run[CQ:image,file="+j["img"]+"]")
 ### *低优先级*
 
 <details>
+  <summary>OpenAI聊天</summary>
+
+  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/aichat"`
+
+  - [x] 设置AI聊天触发概率10
+  - [x] 设置AI聊天温度80
+  - [x] 设置AI聊天接口类型[OpenAI|OLLaMA|GenAI]
+  - [x] 设置AI聊天(不)支持系统提示词
+  - [x] 设置AI聊天接口地址https://xxx
+  - [x] 设置AI聊天密钥xxx
+  - [x] 设置AI聊天模型名xxx
+  - [x] 查看AI聊天系统提示词
+  - [x] 重置AI聊天系统提示词
+  - [x] 设置AI聊天系统提示词xxx
+  - [x] 设置AI聊天分隔符`</think>`(留空则清除)
+  - [x] 设置AI聊天(不)响应AT
+
+</details>
+<details>
   <summary>骂人</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/curse"`
@@ -1544,7 +1601,7 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
-  <summary>词典匹配回复</summary>
+  <summary>词典匹配回复, 仅@触发</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/thesaurus"`
 
